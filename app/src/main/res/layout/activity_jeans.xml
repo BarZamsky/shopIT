@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    tools:context=".JeansActivity">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jeans"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        android:paddingTop="10sp"
+        android:textStyle="bold"
+        app:fontFamily="cursive" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="120sp"
+        android:layout_height="130sp"
+        android:paddingTop="20sp"
+        app:srcCompat="@drawable/jeans" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5sp"
+        android:text="Levis Jeans"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5sp"
+        android:text="Price: 499.99"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingBottom="5sp"
+        android:text="add to cart"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnBack"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="Back to cart"
+        android:textStyle="bold" />
+</LinearLayout>

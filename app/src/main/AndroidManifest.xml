@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.barza.ourshop">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:xlargeScreens="true">
+
+    </supports-screens>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--<activity android:name=".Server.LoginActivity" />-->
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".ShoesActivity"
+            android:label="@string/title_activity_shoes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".JeansActivity"
+            android:label="@string/title_activity_jeans"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ShirtsActivity" />
+        <activity android:name=".SkirtsActivity" />
+        <activity android:name=".ShopActivity" />
+        <activity android:name=".CartActivity" />
+        <activity android:name=".CheckoutActivity" />
+        <activity android:name=".ConfirmActivity" />
+        <activity android:name=".ManagerActivity" />
+        <activity android:name=".ProductActivity" />
+        <activity android:name=".ApproveActivity">
+
+        </activity>
+    </application>
+
+</manifest>

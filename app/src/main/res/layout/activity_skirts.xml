@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SkirtsActivity">
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-206dp"
+        android:layout_marginTop="240dp"
+        android:text="Jeans Skirt"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:layout_marginLeft="-206dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="320dp"
+        android:text="Price: 129.90"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="130dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="18dp"
+        android:text="Skirts"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:fontFamily="cursive" />
+
+    <Button
+        android:id="@+id/btnBack"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="234dp"
+        android:layout_marginLeft="234dp"
+        android:layout_marginBottom="25dp"
+        android:text="Back to cart"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="287dp"
+        android:text="Dark Jeans Skirt"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnDark"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="150dp"
+        android:text="Add to cart"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="189dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="204dp"
+        android:layout_marginLeft="204dp"
+        android:layout_marginTop="92dp"
+        app:srcCompat="@drawable/skirt1" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="189dp"
+        android:layout_height="189dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="-40dp"
+        android:layout_marginRight="-40dp"
+        app:srcCompat="@drawable/skirt2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView6"
+        android:layout_alignLeft="@+id/imageView7"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="287dp"
+        android:text="Light Jeans Skirt"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_alignBottom="@+id/textView7"
+        android:text="Price : 179.9"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnLight"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView6"
+        android:layout_alignTop="@+id/btnDark"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="-3dp"
+        android:text="Add To cart"
+        android:textStyle="bold" />
+
+</RelativeLayout>

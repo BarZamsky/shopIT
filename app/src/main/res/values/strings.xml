@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">OurShop</string>
+    <string name="title_activity_shoes">ShoesActivity</string>
+    <string name="title_activity_jeans">JeansActivity</string>
+</resources>

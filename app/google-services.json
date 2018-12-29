@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "640598723104",
+    "firebase_url": "https://onlinestore-7dba5.firebaseio.com",
+    "project_id": "onlinestore-7dba5",
+    "storage_bucket": "onlinestore-7dba5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640598723104:android:74905c9a35864a4f",
+        "android_client_info": {
+          "package_name": "com.example.barza.ourshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640598723104-74266efv4e22a1ulbma1u2u8h8h9pdeg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.barza.ourshop",
+            "certificate_hash": "b83f855683f7c5dc360155eaf6909e331bc606f4"
+          }
+        },
+        {
+          "client_id": "640598723104-so0i852pvgatgs16kquh9f6n9ievuloe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.barza.ourshop",
+            "certificate_hash": "e50b9bf5ee23059be47a716aea993bcdf75fe719"
+          }
+        },
+        {
+          "client_id": "640598723104-6p9s1c9m7putvg2fcf2evg2g7slaufhu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCA8NgGvJfwnISoSGlOm7th4vWFQ_jBV0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "640598723104-6p9s1c9m7putvg2fcf2evg2g7slaufhu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

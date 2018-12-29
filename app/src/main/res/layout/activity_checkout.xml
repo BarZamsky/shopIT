@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutActivity">
+
+    <EditText
+        android:id="@+id/cardNumber"
+        android:layout_width="296dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp"
+        android:ems="10"
+        android:hint="Card Number"
+        android:inputType="textPassword|number"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <EditText
+        android:id="@+id/expiry"
+        android:layout_width="296dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="199dp"
+        android:ems="10"
+        android:hint="Expiry"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="262dp" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="262dp"
+        android:layout_height="50dp"
+        android:text="Total order: "
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:fontFamily="cursive"
+        android:paddingTop="13sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/cvv"
+        android:layout_width="296dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/expiry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="CVV"
+        android:inputType="textPassword|number"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="96dp" />
+
+    <Button
+        android:id="@+id/btnApprove"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="121dp"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:text="APPROVE"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="226dp"
+        tools:layout_editor_absoluteY="415dp" />
+
+</RelativeLayout>
