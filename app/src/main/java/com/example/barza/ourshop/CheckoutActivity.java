@@ -1,7 +1,13 @@
 package com.example.barza.ourshop;
 
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,7 +31,7 @@ public class CheckoutActivity extends AppCompatActivity {
     private TextView total;
 
     FirebaseDatabase db;
-    DatabaseReference users, card;
+    DatabaseReference  card;
     Button approve;
 
     @Override
@@ -50,6 +56,7 @@ public class CheckoutActivity extends AppCompatActivity {
         approve = (Button) findViewById(R.id.btnApprove);
 
         approve.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
             @Override
             public void onClick(View v) {
                 onApprove(cardInput.getText().toString(), cvvInput.getText().toString(),
@@ -57,13 +64,16 @@ public class CheckoutActivity extends AppCompatActivity {
             }
         });
     }
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     public void onApprove(String cardNumber, String cvv, String expiry){
         db = FirebaseDatabase.getInstance();
         card = db.getReference("CardDetails");
 
         final CardNumber cardDetails = new CardNumber(cardNumber, cvv, expiry);
         final User login = (User) getIntent().getSerializableExtra("User");
+
         card.addListenerForSingleValueEvent(new ValueEventListener() {
+            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if (dataSnapshot.child(login.getEmail().replace(".", "|")).exists()) {
@@ -71,6 +81,7 @@ public class CheckoutActivity extends AppCompatActivity {
                     Toast.makeText(CheckoutActivity.this, "Payment Approved!", Toast.LENGTH_SHORT).show();
                     Intent s = new Intent(getApplicationContext(), ConfirmActivity.class);
                     startActivity(s);
+
                 } else {
                     card.child(login.getEmail().replace(".", "|")).setValue(cardDetails);
                     Toast.makeText(CheckoutActivity.this, "Payment Approved!", Toast.LENGTH_SHORT).show();

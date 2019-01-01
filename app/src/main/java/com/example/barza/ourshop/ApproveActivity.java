@@ -101,7 +101,8 @@ public class ApproveActivity extends AppCompatActivity {
 
     public void approve(Order o) {
         o.set_isApproved(true);
-        orders.child(o.get_orderNumber()).setValue(o);
+//        orders.child(o.get_orderNumber()).setValue(o);
+        orders.child(o.get_orderNumber()).removeValue();
         Toast.makeText(ApproveActivity.this, "Order approved!", Toast.LENGTH_SHORT).show();
         Log.d("Order after:::", o.toString());
         Intent s = new Intent(getApplicationContext(), ApproveActivity.class);
